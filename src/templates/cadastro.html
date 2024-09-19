@@ -4,12 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        greenlight: "#00953b",
+                        redligth: "#f6323e",
+                        begligth: "#ffecc1",
+                    },
+                },
+            },
+        };
+    </script>
+    <title>Cadastro</title>
 </head>
+<header>
+    <nav class="fixed flex items-center justify-between h-20 w-full p-5 bg-[#3b3b3b] bg-opacity-20 shadow-sm">
+        <div>
+            <a href="/"><img class="w-32 mx-24" src="/src/img/pizzalogo.png" /></a>
+        </div>
+        <ul class="flex justify-between items-center space-x-5 mr-24">
+            <li class="text-black font-bold text-lg">
+                <a href="/">Início</a>
+            </li>
+            <li class="text-black font-bold text-lg">
+                <a href="/#beneficios">Cadastro</a>
+            </li>
+            <li class="text-black font-bold text-lg">
+                <a href="/#historia">Sobre</a>
+            </li>
+            <li class="text-black font-bold text-lg">
+                <a href="/#depoimentos">Produtos</a>
+            </li>
+        </ul>
+    </nav>
+</header>
 
 <body>
 
 </body>
+<footer>
+
+</footer>
 
 </html>
