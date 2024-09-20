@@ -11,34 +11,46 @@
       type="text/css"
     />
     <link rel="stylesheet" href="/src/css/style.css" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        greenlight: "#00953b",
+                        redligth: "#f6323e",
+                        begligth: "#ffecc1",
+                    },
+                },
+            },
+        };
+    </script>
   </head>
 
-  <body class="flex flex-col h-screen overflow-hidden bg-orange-50">
-    <header class="bg-gray-200 w-full">
-      <nav class="flex items-center justify-between w-full">
-        <a href="index.html">
-          <img
-            class="h-24"
-            src="/Web_uniSenai_branchs/src/img/marca-1.png"
-            alt="Logo Senai"
-          />
-        </a>
-        <ul class="menu menu-horizontal lg:menu-horizontal rounded-box">
-          <li class>
-            <a class="text-xl" href="login.html"> Login</a>
-          </li>
-          <li>
-            <a class="text-xl" href="cadastro.html">Cadastro</a>
-          </li>
-          <li>
-            <a class="text-xl" href="tabela.html">Tabela</a>
-          </li>
-        </ul>
-      </nav>
+  <body class="flex flex-col h-screen overflow-hidden bg-begligth">
+    <header>
+        <nav class="flex items-center justify-between h-28 w-full p-5 bg-greenlight">
+            <div>
+                <a href="/src/templates/index.html"><img class="w-48 mx-24" src="/src/img/pizzalogo.png" /></a>
+            </div>
+            <ul class="flex justify-between items-center space-x-5 mr-24">
+                <li class="text-black font-bold text-xl">
+                    <a href="index.html">Início</a>
+                </li>
+                <li class="text-black font-bold text-xl">
+                    <a href="cadastro.html">Cadastro</a>
+                </li>
+                <li class="text-black font-bold text-xl">
+                    <a href="sobre.html">Sobre</a>
+                </li>
+                <li class="text-black font-bold text-xl">
+                    <a href="produtos.html">Produtos</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <div class="flex-grow">
-      <div>
+      <div class="ml-48">
         <h1 class="text-red-600 text-6xl">Cardápio</h1>
             <div>
         <p class="text-black text-3xl">
@@ -130,15 +142,10 @@
 
     </div>
 
-    <footer
-      class="footer footer-center bg-gray-200 text-base-content p-4 w-full"
-    >
-      <aside>
-        <p>
-          Copyright © 2024 - Luiz Bernardi - Bruno Meredyk - Eliel Violante - Rafael
-          Barbato
-        </p>
-      </aside>
+    <footer class="bg-redligth ">
+        <div class="flex flex-col items-center justify-center text-xl h-28 text-black">
+            <p>Pizza Italiana© todos os direitos reservados</p>
+        </div>
     </footer>
   </body>
 </html>
