@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/cuidaidososb/src/main/resources/static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        greenlight: "#00953b",
+                        redligth: "#f6323e",
+                        begligth: "#ffecc1",
+                    },
+                },
+            },
+        };
+    </script>
+    <title>Sobre</title>
+</head>
+
+<body>
+    <header>
+        <nav class="flex items-center justify-between h-28 w-full p-5 bg-greenlight">
+            <div>
+                <a href="/src/templates/index.html"><img class="w-48 mx-24" src="/src/img/pizzalogo.png" /></a>
+            </div>
+            <ul class="flex justify-between items-center space-x-5 mr-24">
+                <li class="text-black font-bold text-xl">
+                    <a href="index.html">Início</a>
+                </li>
+                <li class="text-black font-bold text-xl">
+                    <a href="cadastro.html">Cadastro</a>
+                </li>
+                <li class="text-black font-bold text-xl">
+                    <a href="sobre.html">Sobre</a>
+                </li>
+                <li class="text-black font-bold text-xl">
+                    <a href="produtos.html">Produtos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="bg-begligth flex-grow flex w-full items-center justify-center">
+        <div class="image">
+        
+            <img src="/src/img/pizza-bacon.jpg" alt="Foto de uma pizza" title="A pizza" />
+        </div>
+        <div class=" text-black overflow-x-auto">
+            <table class="table">
+            
+              <thead class="text-black">
+                <tr>
+                  <th>Nutrientes</th>
+                  <th>Quantidade por porção</th>
+                  <th>%VD(*)</th>
+                </tr>
+              </thead>
+              <tbody>
+               
+                <tr>
+                 <td>Valor Energético</td>
+                    <td>327kcal</td>
+                    <td>16%</td>
+                </tr>
+          
+                <tr class="hover">
+                    <td>Valor Energético</td>
+                    <td>327kcal</td>
+                    <td>16%</td>
+                </tr>
+               
+                <tr>
+                    <td>Proteínas</td>
+                    <td>30g</td>
+                    <td>40%</td>
+                </tr>
+              </tbody>
+            </table>
+          
+        
+           
+            <p>
+                Lorem ipsum odor amet, consectetuer adipiscing elit. Natoque rutrum adipiscing porttitor scelerisque
+                dictumst. Risus vel facilisi ultricies adipiscing id. Platea mauris natoque posuere; bibendum lorem
+                maximus cubilia primis.
+            </p>
+            <p>
+                Molestie nibh adipiscing consequat habitant mattis. Tincidunt integer leo nisi, sociosqu viverra litora
+                tristique tincidunt. Cursus interdum vitae facilisis turpis senectus.
+            </p>
+            <p>
+                Platea mauris natoque posuere; bibendum lorem maximus cubilia primis.
+            </p>
+            <p>
+                Eget tortor proin lectus ultrices dignissim nisi cursus.
+            </p>
+        </div>
+    </main>
+
+    <footer class="bg-redligth">
+        <div class="flex flex-col items-center justify-center text-xl h-28 text-black">
+            <p>Pizza Italiana© todos os direitos reservados</p>
+        </div>
+    </footer>
+</body>
+
+</html>
