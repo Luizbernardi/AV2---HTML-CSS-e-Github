@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/cuidaidososb/src/main/resources/static/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            redlight: "#E55959",
+            greenlight: "#7FCDCD",
+            graylight: "#E7E7E7",
+            graytext: "#D9D9D9",
+          },
+        },
+      },
+    };
+  </script>
+  <title>Landpage</title>
+</head>
+
+<body>
+    <header>
+        <nav class="fixed flex items-center justify-between h-28 w-full p-5 bg-[#00953b] bg-opacity-50 shadow-sm">
+            <div>
+                <a href="/"><img class="w-48 mx-24" src="/src/img/pizzalogo.png" /></a>
+            </div>
+            <ul class="flex justify-between items-center space-x-5 mr-24">
+                <li class="text-black font-bold text-lg">
+                    <a href="/src/templates/index.html">Início</a>
+                </li>
+                <li class="text-black font-bold text-lg">
+                    <a href="/src/templates/cadastro.html">Cadastro</a>
+                </li>
+                <li class="text-black font-bold text-lg">
+                    <a href="/src/templates/sobre.html">Sobre</a>
+                </li>
+                <li class="text-black font-bold text-lg">
+                    <a href="/src/templates/produtos.html">Produtos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+  <main>
+    <div>
+      <div class="bg-[url('/src/img/bgland.png')] bg-cover bg-no-repeat bg-center w-full h-screen">
+        <div class="absolute bg-[#00953b] drop-shadow rounded-full w-[499px] h-[499px] bottom-0 left-40 opacity-70"></div>
+          <img class="absolute bottom-0 left-36 w-[800px] h-[800px]" src="\src\img\chefpointing.png" alt="Chef Pointing" />
+          <div class="absolute bottom-96 right-[600px]">
+            <p class="text-6xl font-roboto font-bold text-shadow-custom">
+              As melhores
+            </p>
+            <p class="text-6xl font-bold font-roboto text-shadow-custom text-[#f6323e]">
+              Pizzas
+            </p>
+            <p class="text-6xl font-bold font-roboto text-[#f6323e]">
+              diretamente
+            </p>
+            <p class="text-6xl font-bold font-roboto ">
+              na sua Casa
+            </p>
+          </div>
+          <div class="absolute bottom-[350px] right-[950px]">
+            <a href="cadastro.html">
+              <button class="absolute w-[568px] h-[66px] bg-[#00953b] rounded-[12px] text-white text-[32px] font-bold shadow-lg font-roboto">
+                Clique aqui para comprar sua pizza
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>   
+  <footer>
+    <div class="flex flex-col items-center justify-center h-32 text-[#6B6B6B]">
+      <p>Pizza Italian© todos os direitos reservados.</p>
+    </div>
+</body>
+
+</html>
