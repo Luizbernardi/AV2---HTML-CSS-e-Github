@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script>
         tailwind.config = {
             theme: {
@@ -21,33 +22,81 @@
     </script>
     <title>Cadastro</title>
 </head>
-<header>
-    <nav class="fixed flex items-center justify-between h-20 w-full p-5 bg-[#3b3b3b] bg-opacity-20 shadow-sm">
-        <div>
-            <a href="/"><img class="w-32 mx-24" src="/src/img/pizzalogo.png" /></a>
+
+<body class="flex flex-col min-h-screen bg-begligth overflow-hidden">
+    <header>
+        <nav class="flex items-center justify-between h-28 w-full p-5 bg-greenlight">
+            <div>
+                <a href="/src/templates/index.html"><img class="w-48 mx-24" src="/src/img/pizzalogo.png" /></a>
+            </div>
+            <ul class="flex justify-between items-center space-x-5 mr-24">
+                <li class="text-black font-bold text-xl">
+                    <a href="index.html">Início</a>
+                </li>
+                <li class="text-black font-bold text-xl">
+                    <a href="cadastro.html">Cadastro</a>
+                </li>
+                <li class="text-black font-bold text-xl">
+                    <a href="sobre.html">Sobre</a>
+                </li>
+                <li class="text-black font-bold text-xl">
+                    <a href="produtos.html">Produtos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex-grow flex items-center justify-center w-full bg-begligth">
+        <div class="flex items-center justify-center p-20 max-w-[2000px] bg-red-200 ">
+            <form class="space-y-2">
+                <label for="nome" class="input input-bordered flex items-center gap-2 custom-label">
+                    <input type="text" class="grow" autocomplete="off" placeholder="Nome" required>
+                </label>
+                <label class="input input-bordered flex items-center gap-2 custom-label">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 ">
+                        <path
+                            d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
+                        <path
+                            d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
+                    </svg>
+                    <input placeholder="Email" type="text" class="grow" autocomplete="off" id="email" required>
+                </label>
+                <label for="senha" class="input input-bordered flex items-center gap-2 custom-label">
+                    <input type="password" class="grow" autocomplete="off" placeholder="Senha" required>
+                </label>
+                <label for="senha" class="input input-bordered flex items-center gap-2 custom-label">
+                    <input type="password" class="grow" autocomplete="off" placeholder="Confirmação Senha" required>
+                </label>
+                <label for="dataNascimento" class="input input-bordered flex items-center gap-2 custom-label ">
+                    <input type="date" class="grow" autocomplete="off" th:field="*{dataNascimento}" id="dataNascimento"
+                        required>
+                </label>
+                <label for="cpf" class="input input-bordered flex items-center gap-2 custom-label">
+                    <input type="text" class="grow" autocomplete="off" id="cpf" placeholder="Cpf"
+                        oninput="formatCPF(this)" maxlength="11" required>
+                </label>
+                <label for="cidade" class="input input-bordered flex items-center gap-2 custom-label">
+                    <input type="text" id="cidade" placeholder="Cidade" name="cidade" maxlength="50"
+                        pattern="^[a-zA-Z\s]+$">
+                </label>
+                <label for="bairro" class="input input-bordered flex items-center gap-2 custom-label">
+                    <input type="text" id="bairro" placeholder="Bairro" name="bairro" maxlength="50"
+                        pattern="^[a-zA-Z\s]+$">
+                </label>
+                <label for="numero" class="input input-bordered flex items-center gap-2 custom-label">
+                    <input type="text" id="numero" placeholder="Número" name="numero" maxlength="6" pattern="\d{1,6}">
+                </label>
+                <div class="flex justify-center space-x-4 mt-8">
+                    <button class=" bg-greenlight px-6 py-2 rounded-md text-black font-bold "
+                        type="submit">Concluir</button>
+                </div>
+            </form>
         </div>
-        <ul class="flex justify-between items-center space-x-5 mr-24">
-            <li class="text-black font-bold text-lg">
-                <a href="/">Início</a>
-            </li>
-            <li class="text-black font-bold text-lg">
-                <a href="/#beneficios">Cadastro</a>
-            </li>
-            <li class="text-black font-bold text-lg">
-                <a href="/#historia">Sobre</a>
-            </li>
-            <li class="text-black font-bold text-lg">
-                <a href="/#depoimentos">Produtos</a>
-            </li>
-        </ul>
-    </nav>
-</header>
-
-<body>
-
+    </main>
+    <footer class="bg-redligth ">
+        <div class="flex flex-col items-center justify-center text-xl h-28 text-black">
+            <p>Pizza Italiana© todos os direitos reservados</p>
+        </div>
+    </footer>
 </body>
-<footer>
-
-</footer>
 
 </html>
