@@ -24,32 +24,32 @@
         },
       },
     };
-  </script>
-  <title>Landpage</title>
+</script>
+<title>Landpage</title>
 </head>
 
 <body>
-    <header>
-        <nav class="fixed flex items-center justify-between h-28 w-full p-5 bg-[#00953b] bg-opacity-50 shadow-sm">
-            <div>
-                <a href="/"><img class="w-48 mx-24" src="/src/img/pizzalogo.png" /></a>
-            </div>
-            <ul class="flex justify-between items-center space-x-5 mr-24">
-                <li class="text-black font-bold text-lg">
-                    <a href="/src/templates/index.html">Início</a>
-                </li>
-                <li class="text-black font-bold text-lg">
-                    <a href="/src/templates/cadastro.html">Cadastro</a>
-                </li>
-                <li class="text-black font-bold text-lg">
-                    <a href="/src/templates/sobre.html">Sobre</a>
-                </li>
-                <li class="text-black font-bold text-lg">
-                    <a href="/src/templates/produtos.html">Produtos</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav class="fixed flex items-center justify-between h-28 w-full p-5 bg-[#00953b] shadow-sm z-50 opacity-80">
+        <div>
+            <a href="/src/templates/index.html"><img class="w-48 mx-24" src="/src/img/pizzalogo.png" /></a>
+        </div>
+        <ul class="flex justify-between items-center space-x-5 mr-24">
+            <li class="text-black font-bold text-lg">
+                <a href="/src/templates/index.html">Início</a>
+            </li>
+            <li class="text-black font-bold text-lg">
+                <a href="/src/templates/cadastro.html">Cadastro</a>
+            </li>
+            <li class="text-black font-bold text-lg">
+                <a href="/src/templates/sobre.html">Sobre</a>
+            </li>
+            <li class="text-black font-bold text-lg">
+                <a href="/src/templates/produtos.html">Produtos</a>
+            </li>
+        </ul>
+    </nav>
+</header>
   <main>
     <div>
       <div class="bg-[url('/src/img/bgland.png')] bg-cover bg-no-repeat bg-center w-full h-screen">
@@ -79,11 +79,23 @@
         </div>
       </div>
     </div>
-  </main>   
-  <footer>
-    <div class="flex flex-col items-center justify-center h-32 text-[#6B6B6B]">
-      <p>Pizza Italian© todos os direitos reservados.</p>
+  </main>
+<section class="bg-begligth py-16">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-8">Sobre a Pizzaria</h2>
+        <p class="text-lg text-center mb-4">
+            Bem-vindo à nossa pizzaria! Nós nos orgulhamos de oferecer as melhores pizzas feitas com ingredientes frescos e de alta qualidade. Nossa missão é proporcionar uma experiência gastronômica inesquecível para todos os nossos clientes.
+        </p>
+        <p class="text-lg text-center">
+            Venha nos visitar e experimente nossas deliciosas pizzas, preparadas com amor e dedicação. Estamos ansiosos para servi-lo!
+        </p>
     </div>
+</section>
+    <footer class="bg-[#f6323e]">
+        <div class="flex flex-col items-center justify-center text-xl h-28 text-black">
+            <p>Pizza Italiana© todos os direitos reservados</p>
+        </div>
+    </footer>
 </body>
 
 </html>
